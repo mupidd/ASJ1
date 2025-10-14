@@ -1,0 +1,78 @@
+*, body {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    margin: 40px;
+}
+
+.navbar div ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 400px;
+    align-items: center;
+}
+
+.navbar div ul li {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.navbar div ul li a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #f07474;
+    letter-spacing: 2px;
+}
+
+.navbar div ul .judul {
+    font-family: "Arimo", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(115, 180, 255);
+}
+
+.text {
+    padding-left: 480px;
+    padding-top: 150px;
+}
+
+.text .subHead {
+    color: rgb(168, 205, 247);
+    font-family: "Arimo", sans-serif;
+    padding-bottom: 35px;
+}
+
+.text .heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 450;
+    font-size: 2.5em;
+}
+
+.text p {
+    text-align: justify;
+    padding-top: 30px;
+    line-height: 1.5;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+}
+
+.background {
+    position: absolute;
+    width: 700px;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.utama {
+    position: relative;
+    width: 500px;
+    margin-left: 1025px;
+    z-index: 2;
+    margin-top: -230px;
+}
+
