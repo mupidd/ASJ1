@@ -60,19 +60,87 @@
     font-weight: 400;
 }
 
+/* === Responsive Image Fix === */
 .background {
     position: absolute;
-    width: 700px;
+    width: 50%; /* ganti dari 700px ke persentase */
     right: 0;
     top: 0;
     z-index: 1;
+    max-width: 700px;
 }
 
 .utama {
     position: relative;
-    width: 500px;
-    margin-left: 1025px;
+    width: 35%; /* ganti dari 500px ke persentase */
+    margin-left: 54%; /* biar ngikut kanan */
+    margin-right: 5%;
     z-index: 2;
-    margin-top: -230px;
+    margin-top: -10%; /* pakai persen biar fleksibel */
+    max-width: 500px;
+}
+
+/* === RESPONSIVE BREAKPOINTS === */
+@media (max-width: 1024px) {
+    .text {
+        padding-left: 250px;
+        padding-top: 100px;
+    }
+
+    .background {
+        width: 60%;
+    }
+
+    .utama {
+        width: 45%;
+        margin-top: -15%;
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        padding-left: 100px;
+        padding-top: 80px;
+    }
+
+    .background {
+        width: 80%;
+        opacity: 0.6; /* biar ga nutupin tulisan */
+    }
+
+    .utama {
+        width: 60%;
+        margin-top: -5%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .navbar div ul {
+        padding-left: 0;
+        flex-direction: column;
+    }
+
+    .navbar div ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .text {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .background {
+        width: 100%;
+        position: relative;
+    }
+
+    .utama {
+        width: 80%;
+        margin: 20px auto 0;
+        position: relative;
+    }
 }
 
